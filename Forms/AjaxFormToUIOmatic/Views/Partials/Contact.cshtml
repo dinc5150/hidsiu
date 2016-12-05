@@ -1,8 +1,11 @@
 @inherits Umbraco.Web.Mvc.UmbracoViewPage<MVCUmbraco.Models.Contact>
 <div id="status"></div>
-@using (Ajax.BeginForm("SendMail", "Contact", new AjaxOptions { HttpMethod = "POST", 
-    InsertionMode = InsertionMode.Replace, UpdateTargetId = "target", 
-    OnFailure = "ShowError()", OnSuccess = "ShowSuccess()" }))
+@using (Ajax.BeginForm("SendMail", "Contact", new AjaxOptions { 
+    HttpMethod = "POST", 
+    InsertionMode = InsertionMode.Replace, 
+    UpdateTargetId = "target", 
+    OnFailure = "ShowError()", 
+    OnSuccess = "ShowSuccess()" }))
 {
     
     <fieldset>
