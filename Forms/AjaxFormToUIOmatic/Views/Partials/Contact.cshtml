@@ -4,8 +4,8 @@
     HttpMethod = "POST", 
     InsertionMode = InsertionMode.Replace, 
     UpdateTargetId = "target", 
-    OnFailure = "ShowError()", 
-    OnSuccess = "ShowSuccess()" }))
+    OnFailure = "ShowError", 
+    OnSuccess = "ShowSuccess" }))
 {
     
     <fieldset>
@@ -34,8 +34,9 @@
         $("#status").html("<strong>Error!</strong> There was an error posting the contact form. Please try again later.");
     }
 
-    function ShowSuccess() {
+    function ShowSuccess(data) {
         $("#target").removeClass();
         $("#target").addClass("alert alert-success");
+        console.log(data);
     }
 </script>
