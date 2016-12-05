@@ -1,6 +1,8 @@
 # How To Create An Ajax MVC form and save to UIOmatic
 
-*** Note To Self: Have a look at TRC Packman for good example
+*** Note To Self: 
+ - Have a look at TRC Packman for good example
+ - This code hasnt been tested yet
 
 Nuget Requirements:
  - Umbraco
