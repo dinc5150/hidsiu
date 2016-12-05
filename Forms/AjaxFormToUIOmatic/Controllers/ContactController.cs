@@ -21,6 +21,10 @@ using System.Net;
 
             if (ModelState.IsValid)
             {
+            //Save to DB
+            var db = ApplicationContext.DatabaseContext.Database;
+            db.Save(form);
+            
                 //Update your SMTP server credentials
                 using (var client = new SmtpClient { Host = "smtp.gmail.com", Port = 587, EnableSsl = true, 
                     Credentials = new NetworkCredential("account@gmail.com", "password"), 
